@@ -1,0 +1,82 @@
+<div class="black">
+  <i class="fas fa-user"></i> 
+  <a href="login">login</a> <p> / </p> <a href="registro">Registrate</a> 
+</div>
+<mat-toolbar>
+  <mat-toolbar-row>
+    <div class="links">
+      <div class="social-media" style="align-items: center; display: flex">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <i class="fas fa-circle"></i>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <i class="fas fa-circle"></i>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <i class="fas fa-circle"></i>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+
+      <div class="logo">
+        <img src="/assets/Logo.png" alt="Logo" />
+      </div>
+
+      <div class="others">
+        <a href="#"><i class="fas fa-shopping-bag"></i></a>
+        <i class="fas fa-circle"></i>
+        <a href="#"><i class="fas fa-heart"></i></a>
+        <i class="fas fa-circle"></i>
+        <a href="#"><i class="fas fa-search"></i></a>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<div class="menu">
+  <button mat-button [matMenuTriggerFor]="menu">Nuevo</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Ropa</button>
+    <button mat-menu-item>Lociones</button>
+    <button mat-menu-item>Accesorios</button>
+    <button mat-menu-item>Maquillaje</button>
+    <button mat-menu-item>Zapatos</button>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="menu2">Cursos</button>
+  <mat-menu #menu2="matMenu">
+    <button mat-menu-item>Maquillaje Artistico</button>
+    <button mat-menu-item>Tonalidad</button>
+    <button mat-menu-item>Diseño de interiores</button>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="menu3">Productos</button>
+  <mat-menu #menu3="matMenu">
+    <button mat-menu-item>Maquillajes</button>
+    <button mat-menu-item>Ropa</button>
+    <button mat-menu-item>Zapatos</button>
+    <button mat-menu-item>Lociones</button>
+    <button mat-menu-item>Tratamientos</button>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="menu4">Accesorios</button>
+  <mat-menu #menu4="matMenu">
+    <button mat-menu-item>Carteras</button>
+    <button mat-menu-item>Bolsos</button>
+    <button mat-menu-item>Pulseras</button>
+  </mat-menu>
+
+  <a href="#">Conocenos</a>
+
+  <a href="#">Promociones</a>
+
+</div>
+
+<div class="burger-menu">
+  <button mat-fab mat-button [matMenuTriggerFor]="aboveMenu"><i class="fas fa-bars"></i></button>
+  <mat-menu #aboveMenu="matMenu" yPosition="above">
+    <button mat-menu-item>Nuevo</button>
+    <button mat-menu-item>Cursos</button>
+    <button mat-menu-item>Productos</button>
+    <button mat-menu-item>Accesorios</button>
+    <button mat-menu-item>Conocenos</button>
+    <button mat-menu-item>Promociones</button>
+  </mat-menu>
+</div>

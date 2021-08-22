@@ -1,0 +1,14 @@
+ngb-carousel {
+
+  .ng-template {
+    width: 100%;
+
+    .carousel-caption {
+
+      button {
+        position: absolute;
+        top: 10px;
+      }
+    }
+  }
+}
